@@ -31,6 +31,46 @@ public class Item {
 	@Column(name = "cost")
 	private double cost;
 
+	public int getItemid() {
+		return itemid;
+	}
+
+	public void setItemid(int itemid) {
+		this.itemid = itemid;
+	}
+
+	public String getItemName() {
+		return ItemName;
+	}
+
+	public void setItemName(String itemName) {
+		ItemName = itemName;
+	}
+
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
+	}
+
+	public int getQuantity() {
+		return quantity;
+	}
+
+	public void setQuantity(int quantity) {
+		this.quantity = quantity;
+	}
+
+	public double getCost() {
+		return cost;
+	}
+
+	public void setCost(double cost) {
+		this.cost = cost;
+	}
+
 	
 	
 }

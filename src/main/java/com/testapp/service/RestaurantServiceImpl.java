@@ -39,6 +39,12 @@ public class RestaurantServiceImpl implements IRestaurantService{
 		repository.delete(restaurant);
 		
 	}
+	
+	@Override
+	public List<Restaurant> getAllRestaurant() {
+		// TODO Auto-generated method stub
+		return (List<Restaurant>)repository.findAll();
+	}
 
 	//Still Have to Work on these Parts
 	
@@ -58,12 +64,6 @@ public class RestaurantServiceImpl implements IRestaurantService{
 	public List<Restaurant> viewBearByRestaurant(String location) {
 		// TODO Auto-generated method stub
 		return null;
-	}
-
-	@Override
-	public List<Restaurant> getAllRestaurant() {
-		// TODO Auto-generated method stub
-		return (List<Restaurant>)repository.findAll();
 	}
 	
 
