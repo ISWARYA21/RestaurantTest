@@ -18,7 +18,7 @@ import com.testapp.service.CategoryServiceImpl;
 public class CategoryController {
 	@Autowired
 	CategoryServiceImpl catserv;
-	
+	//controller
 	@PostMapping("/category")
 	public void addCategory(@RequestBody Category cat) {	
 		catserv.addCategory(cat);
